@@ -122,11 +122,11 @@ img {
 	box-shadow: var(--shadow)
 }
 
-.text1 {
+.articleBox p:nth-child(0) {
 	grid-area: text1;
 }
 
-.text2 {
+.articleBox p:nth-child(1) {
 	grid-area: text2;
 }
 
