@@ -4,6 +4,7 @@
 	--dark: #444444;
 	--light: #FFFFFF; 
 	--darker: #000000;
+	--logoblue: #2699FB;
 	--shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 
@@ -46,7 +47,7 @@ img {
 .mainHeader h1 {
 	font-family: BerlinSansFB;
 	font-size: 2em;
-	color: #2699FB;
+	color: var(--logoblue);
 }
 
 .mainNav ul {
@@ -94,8 +95,21 @@ img {
 	display: flex;
 	flex-direction: column;
 	align-items: start;
-	justify-content: center;
+	justify-content: top;
 	box-shadow: var(--shadow)
+}
+
+.showcase h1 {
+	font-size: 4rem;
+	margin-bottom: 0;
+	margin-top: 0;
+	color: var(--light);
+}
+
+.showcase p {
+	font-size: 1.3rem;
+	margin-top: 0;
+	color: var(--light);
 }
 
 .textContent {
