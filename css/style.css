@@ -75,9 +75,29 @@ img {
 }
 
 /* maincontent */
-#maincontent {
+.articleBox {
 	display: grid;
 	grid-gap: 20px;
 	grid-template-areas: 
-		''
+		'showcase'
+		'textContent'
+}
+
+/* Showcase */
+.showcase {
+	grid-area: showcase;
+	min-height: 400px;
+	background: url(../img/haarlem.jpg);
+	background-size: cover;
+	background- position: center;
+	padding: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	box-shadow: var(--shadow)
+}
+
+.textContent {
+	grid-area: textContent;
 }
