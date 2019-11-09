@@ -3,6 +3,12 @@
     src: url(../fonts/BerlinSansFBRegular.ttf) format("truetype");
 }
 
+body{
+	font-family: Arial, "Arial 30pt", "Arial 25pt";
+	color: #000000;
+	margin: 0;
+}
+
 .backgroundVideo {
 	z-index: -1;
 	position: fixed;
@@ -11,4 +17,10 @@
 	top: 0;
 	left: 0;
 	display: block;
+}
+
+.mainHeader h1 {
+	font-family: BerlinSansFB;
+	font-size: 2em;
+	color: #2699FB;
 }
