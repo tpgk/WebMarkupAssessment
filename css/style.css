@@ -31,6 +31,8 @@ img {
 .wrapper {
 	display: grid;
 	grid-gap: 20px;
+	width: 80%;
+	padding-left: 10%;
 }
 
 .backgroundVideo {
@@ -77,11 +79,14 @@ img {
 
 /* maincontent */
 .articleBox {
+	background-color: var(--primary);
 	display: grid;
 	grid-gap: 20px;
 	grid-template-areas: 
-		'showcase'
-		'textContent'
+		'showcase showcase'
+		'text1 text1'
+		'image text2'
+		'footer footer' 
 }
 
 /* Showcase */
@@ -90,13 +95,12 @@ img {
 	min-height: 400px;
 	background: url(../img/haarlem.jpg);
 	background-size: cover;
-	background- position: center;
+	background-position: center;
 	padding: 3rem;
 	display: flex;
 	flex-direction: column;
 	align-items: start;
 	justify-content: top;
-	box-shadow: var(--shadow)
 }
 
 .showcase h1 {
@@ -112,6 +116,20 @@ img {
 	color: var(--light);
 }
 
-.textContent {
-	grid-area: textContent;
+/* maincontent image and text */
+.maincontentImage {
+	grid-area: image;
+	box-shadow: var(--shadow)
+}
+
+.text1 {
+	grid-area: text1;
+}
+
+.text2 {
+	grid-area: text2;
+}
+
+footer {
+	grid-area: footer;
 }
