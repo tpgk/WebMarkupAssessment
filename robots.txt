@@ -1,6 +1,7 @@
 # Groep 1
 User-agent: Googlebot
-Disallow: /nogooglebot/
+Disallow: /nogooglebot/ 
+Disallaow: /forbidden/
 
 # Groep 2
 User-agent: *
