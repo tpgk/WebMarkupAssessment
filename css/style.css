@@ -222,7 +222,7 @@ footer {
 	'showcase showcase showcase showcase'
 	'pc1 pc2 pc3 pc4'
 	'pc5 pc6 pc7 pc8'
-	'pc9 pc0 pc0 pc0'
+	'pc9 pc0 pc00 mudo'
 	'footer footer footer footer';
 }
 
@@ -260,7 +260,7 @@ footer {
 	grid-gap: 20px;
 	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 	width: 100%;
-	box-shadow: var(--shadow)
+	box-shadow: var(--shadow);
 }
 
 .pc1 {
@@ -293,6 +293,17 @@ footer {
 .pc0 {
 	grid-area: pc0;
 }
+.pc00 {
+	grid-area: pc00;
+}
+
+.mudoText {
+	grid-area: mudo;
+	max-width: 200px;
+	margin-top: 0;
+	color: var(--dark);
+	font-size: 1.15rem;
+}
 
 .sportText {
 	position: absolute;
@@ -300,11 +311,22 @@ footer {
 	color: var(--light);
 	padding-left: 1rem;
 }
+.mudo {
+	position: absolute;
+	max-width: 200px;
+	color: var(--light);
+	padding-left: 1rem;
+	font-size: 2em;
+	background-color: var(--dark);
+}
 
 .articleBox3 a:hover {
 	box-shadow: 0 5px 10px rgba(104, 104, 104, 0.8);
 }
 
+.sportcity {
+	color: var(--light);
+}
 
 /* Media Queries */
 @media(max-width: 1280px) {
@@ -339,8 +361,10 @@ footer {
 		'pc5 pc6'
 		'pc7 pc8'
 		'pc9 pc0'
+		'pc00 mudo'
 		'footer footer';
 	}
+
 }
 
 @media(max-width: 481px) {
@@ -381,6 +405,8 @@ footer {
 		'pc8'
 		'pc9'
 		'pc0'
+		'pc00'
+		'mudo'
 		'footer'
 	}
 
@@ -391,5 +417,9 @@ footer {
 
 	.mainNav ul {
 		grid-template-columns: 1fr;
+	}
+
+	.mudoText {
+		max-width: 100%
 	}
 }
