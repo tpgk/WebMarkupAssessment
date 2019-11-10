@@ -5,6 +5,7 @@
 	--light: #FFFFFF; 
 	--darker: #000000;
 	--logoblue: #2699FB;
+	--primaryL: rgba(245, 245, 245, 0.7);
 	--shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 
@@ -46,10 +47,16 @@ img {
 }
 
 /*header and navigation */
+
 .mainHeader h1 {
 	font-family: BerlinSansFB;
-	font-size: 2em;
+	font-size: 5em;
+	margin-bottom: 0;
 	color: var(--logoblue);
+}
+
+.mainHeader h2 {
+	margin-top: 0;
 }
 
 .mainNav ul {
@@ -387,6 +394,27 @@ footer {
 
 }
 
+#contact {
+	background-color: var(--primaryL);
+	border-radius: 5px;
+	padding: 0.8rem;
+	box-shadow: var(--shadow);
+	color: var(--darker);
+}
+
+.verplicht {
+	color: red;
+}
+
+.btn:hover {
+	cursor: pointer; 
+}
+
+.foot {
+	background-color: var(--primaryL);
+	text-align: center;
+	box-shadow: var(--shadow);
+}
 
 /* Media Queries */
 @media(max-width: 1280px) {
