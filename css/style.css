@@ -35,16 +35,16 @@
 	--shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 
+html {
+	box-sizing: border-box;
+	color: var(--darker);
+	font-family: Arial, "Arial 30pt", "Arial 25pt";
+	scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: "BerlinSansFB";
     src: url(../fonts/BerlinSansFBRegular.ttf) format("truetype");
-}
-
-html {
-	box-sizing: border-box;
-	font-family: Arial, "Arial 30pt", "Arial 25pt";
-	color: var(--darker);
-	scroll-behavior: smooth;
 }
 
 body {
