@@ -338,7 +338,8 @@ footer {
 	padding: 0.8rem;
 	grid-template-areas: 
 	'showcase'
-	'text1'
+	'text'
+	'btn'
 	'footer';
 }
 
@@ -368,6 +369,24 @@ footer {
 	margin-top: 0;
 	color: var(--light);
 }
+
+.jiujitsuText {
+	grid-area: text;
+}
+
+.btn {
+	grid-area: btn;
+	background-color: var(--dark);
+	color: var(--light);
+	padding: 0.6rem 1.3rem;
+	text-decoration: none;
+	border: 0;
+	max-width: 12%;
+	text-align: center;
+	box-shadow: var(--shadow)
+
+}
+
 
 /* Media Queries */
 @media(max-width: 1280px) {
@@ -433,6 +452,10 @@ footer {
 		font-size: 2.5rem;
 	}
 
+	.showcase4 h1 {
+		font-size: 2.5rem;
+	}
+
 	.articleBox3 {
 		grid-template-areas: 
 		'showcase'
@@ -462,5 +485,9 @@ footer {
 
 	.mudoText {
 		max-width: 100%
+	}
+
+	.btn {
+		max-width: 100%;
 	}
 }
