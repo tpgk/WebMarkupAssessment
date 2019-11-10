@@ -68,7 +68,7 @@ img {
 	text-align: center;
 	color: var(--darker);
 	text-transform: uppercase;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	box-shadow: var(--shadow)
 }
 
@@ -76,6 +76,7 @@ img {
 	background: var(--dark);
 	color: var(--light);
 }
+
 
 /* maincontent */
 .articleBox {
@@ -293,6 +294,17 @@ footer {
 	grid-area: pc0;
 }
 
+.sportText {
+	position: absolute;
+	max-width: 200px;
+	color: var(--light);
+	padding-left: 1rem;
+}
+
+.articleBox3 a:hover {
+	box-shadow: 0 5px 10px rgba(104, 104, 104, 0.8);
+}
+
 
 /* Media Queries */
 @media(max-width: 1280px) {
@@ -374,9 +386,10 @@ footer {
 
 	body {
 		margin-left: 0px;
+		margin-right: 0px;
 	}
 
-	.wrapper {
-		padding-left: 0;
+	.mainNav ul {
+		grid-template-columns: 1fr;
 	}
 }
